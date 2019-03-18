@@ -12,7 +12,7 @@ const Paper = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    min-height: 300px;
+    min-height: 200px;
     width: 400px;
     background-color: #fff;
     border-radius: 8px;

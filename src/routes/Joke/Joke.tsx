@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import JokeApiInterface from '../../common/services/jokeApi/JokeApiInterface';
 import Loader from './../../components/Loader/Loader';
 import * as SC from './styles';

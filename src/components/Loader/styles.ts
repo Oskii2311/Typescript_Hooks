@@ -1,14 +1,9 @@
 import styled from 'styled-components';
 
 const Loader = styled.svg`
-    position: absolute;
-    top: 50%;
-    left: 50%;
     animation: rotate 2s linear infinite;
-    margin: auto;
     width: 50px;
     height: 50px;
-    transform: translateX(-25px);
     & .path {
         stroke: #5652bf;
         stroke-linecap: round;

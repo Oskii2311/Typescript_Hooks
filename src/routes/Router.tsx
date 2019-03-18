@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import Joke from './Joke/Joke';
 import withApi from '../hocs/withApi';
