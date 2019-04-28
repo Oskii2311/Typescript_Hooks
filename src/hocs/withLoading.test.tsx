@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './withLoading';
 import { render } from 'react-testing-library';
 import withLoading from './withLoading';
 

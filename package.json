@@ -1,54 +1,49 @@
 {
-  "name": "typescript_hooks",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/jest": "24.0.11",
-    "@types/node": "11.13.8",
-    "@types/react": "16.8.14",
-    "@types/react-dom": "16.8.4",
-    "@types/react-router-dom": "^4.3.2",
-    "@types/styled-components": "^4.1.14",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0",
-    "styled-components": "^4.2.0",
-    "typescript": "3.4.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "plugin:@typescript-eslint/recommended",
-      "prettier/@typescript-eslint",
-      "plugin:prettier/recommended"
+    "name": "typescript_hooks",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@types/jest": "24.0.11",
+        "@types/node": "11.13.8",
+        "@types/react": "16.8.14",
+        "@types/react-dom": "16.8.4",
+        "@types/react-router-dom": "^4.3.2",
+        "@types/styled-components": "^4.1.14",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-router-dom": "^5.0.0",
+        "react-scripts": "3.0.0",
+        "styled-components": "^4.2.0",
+        "typescript": "3.4.5"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "plugin:@typescript-eslint/recommended",
+            "prettier/@typescript-eslint",
+            "plugin:prettier/recommended"
+        ],
+        "parser": "@typescript-eslint/parser",
+        "plugins": [
+            "react-hooks"
+        ]
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
     ],
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "react-hooks"
-    ]
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/parser": "^1.7.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-react": "^7.12.4",
-    "prettier": "^1.17.0",
-    "react-testing-library": "^7.0.0",
-    "tslint-config-prettier": "^1.18.0"
-  }
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "prettier": "^1.17.0",
+        "react-testing-library": "^7.0.0",
+        "tslint-config-prettier": "^1.18.0"
+    }
 }
