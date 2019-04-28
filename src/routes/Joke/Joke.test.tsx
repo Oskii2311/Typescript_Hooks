@@ -1,8 +1,14 @@
 import React from 'react';
 import Joke from './Joke';
-import { render, fireEvent, waitForElement } from 'react-testing-library';
+import {
+    render,
+    fireEvent,
+    waitForElement,
+    cleanup,
+} from 'react-testing-library';
 import JokeApi from './../../common/__MOCKS__/JokeApi';
 
+afterEach(cleanup);
 describe('Joke', () => {
     test('Should render Button and proper text', () => {
         const api = new JokeApi();

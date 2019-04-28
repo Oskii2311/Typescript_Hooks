@@ -30,7 +30,7 @@ const Joke = (props: IProps) => {
                     {joke ? joke.value : "You haven't loaded any joke yet!"}
                 </div>
                 <ButtonWithLoading isLoading={isLoading} onClick={fetchJoke}>
-                    get joke
+                    Fetch Joke
                 </ButtonWithLoading>
             </SC.Paper>
         </SC.Container>
