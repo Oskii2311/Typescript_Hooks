@@ -3,7 +3,6 @@ import IJokeApi from './JokeApiInterface';
 
 class JokeApi implements IJokeApi {
     private url = '';
-    constructor() {}
 
     async fetchJoke() {
         this.url = JOKE_URL;
