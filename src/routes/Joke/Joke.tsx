@@ -1,7 +1,9 @@
 import React, { useCallback, useState } from 'react';
 import JokeApiInterface from '../../common/services/jokeApi/JokeApiInterface';
-import Loader from './../../components/Loader/Loader';
+import withLoading from '../../hocs/withLoading';
 import * as SC from './styles';
+
+const ButtonWithLoading = withLoading(SC.Button);
 
 interface IProps {
     api: JokeApiInterface;
@@ -27,11 +29,9 @@ const Joke = (props: IProps) => {
                 <div>
                     {joke ? joke.value : "You haven't loaded any joke yet!"}
                 </div>
-                {isLoading ? (
-                    <Loader />
-                ) : (
-                    <SC.Button onClick={fetchJoke}>Fetch Joke</SC.Button>
-                )}
+                <ButtonWithLoading isLoading={isLoading} onClick={fetchJoke}>
+                    get joke
+                </ButtonWithLoading>
             </SC.Paper>
         </SC.Container>
     );
